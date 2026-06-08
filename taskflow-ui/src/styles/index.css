@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #0f0f13;
+  color: #e5e5e7;
+}
+
+body {
+  background-color: #0f0f13;
+  color: #e5e5e7;
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+}
+
+@layer components {
+  .btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 200ms;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background-color: #6c63ff;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+
+  .btn-secondary {
+    background-color: #252533;
+    color: white;
+  }
+
+  .btn-secondary:hover {
+    background-color: #1a1a24;
+  }
+
+  .btn-danger {
+    background-color: #ff6b6b;
+    color: white;
+  }
+
+  .btn-danger:hover {
+    opacity: 0.9;
+  }
+
+  .card {
+    background-color: #1a1a24;
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid #252533;
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 8px 12px;
+    background-color: #1a1a24;
+    border: 1px solid #252533;
+    border-radius: 8px;
+    color: white;
+    transition: all 200ms;
+  }
+
+  .input-field::placeholder {
+    color: #8c8c96;
+  }
+
+  .input-field:focus {
+    outline: none;
+    border-color: #6c63ff;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .badge-primary {
+    background-color: rgba(108, 99, 255, 0.2);
+    color: #6c63ff;
+  }
+
+  .badge-success {
+    background-color: rgba(0, 208, 132, 0.2);
+    color: #00d084;
+  }
+
+  .badge-warning {
+    background-color: rgba(255, 165, 0, 0.2);
+    color: #ffa500;
+  }
+
+  .badge-danger {
+    background-color: rgba(255, 107, 107, 0.2);
+    color: #ff6b6b;
+  }
+}

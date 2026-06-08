@@ -1,0 +1,9 @@
+packages:
+  - 'taskflow-api'
+  - 'taskflow-ui'
+allowBuilds:
+  '@prisma/client': false
+  '@prisma/engines': false
+  '@scarf/scarf': false
+  esbuild: false
+  prisma: false

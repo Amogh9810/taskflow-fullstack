@@ -1,0 +1,17 @@
+{
+  "name": "taskflow",
+  "version": "1.0.0",
+  "description": "Production-grade task management system with Node.js/Express backend and React/Vite frontend",
+  "private": true,
+  "workspaces": [
+    "taskflow-api",
+    "taskflow-ui"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=taskflow-api & npm run dev --workspace=taskflow-ui",
+    "build": "npm run build --workspace=taskflow-api && npm run build --workspace=taskflow-ui",
+    "api": "npm run dev --workspace=taskflow-api",
+    "ui": "npm run dev --workspace=taskflow-ui"
+  },
+  "devDependencies": {}
+}
